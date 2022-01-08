@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    height: 10%;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #005FFF;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    margin: 2px;
+    background: yellow;
+}
+
+main {
+    height: 80%;
+}
+
+footer {
+    background: #005FFF;
+    height: 5%;
+}
+
+#copyright {
+    text-align: center;
+}
+
+h3 {
+    color:red
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='favicon/favicon.ico')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="{{url_for('home_get')}}">トップ</a></li>
+                <li> <a href="{{url_for('menu')}}">メニュー</a></li>
+                <li>カート</li>
+                <li>検索</li>
+                <li> <a href="{{url_for('logout')}}">ログアウト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    {% block content %}
+    <!-- ページごとにコンテンツを埋め込む -->
+    {% endblock %}
+    </main>
+
+    <footer>
+        <div id="copyright">
+            <small>&copy;1985 Morijyobi</small>
+        </div>
+    </footer>
+</body>
+</html>
