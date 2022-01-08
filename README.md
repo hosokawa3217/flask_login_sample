@@ -36,3 +36,12 @@ create table account(
  primary key(id)
 );
 """
+
+#### app.py
+ハッシュパスワード利用のログイン処理
+
+cookieとsessionを未使用
+
+#### app_session.py
+##### cookieとsessionを使用
+ハッシュパスワード利用のログイン処理
